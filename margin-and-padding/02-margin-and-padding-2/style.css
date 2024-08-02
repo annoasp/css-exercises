@@ -7,21 +7,36 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 8px;
+  /*I had used an 8px solid white border to achieve the separation of the content from the edges, which appeared to look the same visually.*/
 }
 
 .title {
   background: #e3f4ff;
+  font-size: 16px;
+  padding: 8px;
+  margin-bottom: 8px;
+  /* I noticed the irregularity of the bottom margin on this element but didn't think to specify it in the same way as with the content element.*/
 }
 
 .content {
   background: #e3f4ff;
+  margin-bottom: 8px;
+  padding: 16px 8px;
 }
 
 .button-container {
   background: #e3f4ff;
+  padding: 8px;
+  text-align: center;
+  /* Had to check solution to remember about text-align.*/
 }
 
 button {
+  display: block;
+  margin: 0 auto;
+  /* was trying to add the margin 0 auto part to the whole container, not just the button, with no success. */
   background: white;
   border: 1px solid #eee;
+  padding: 8px 24px;
 }
